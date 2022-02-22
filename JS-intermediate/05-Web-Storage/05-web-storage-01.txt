@@ -1,0 +1,3 @@
+1. localStorage merupakan penyimpanan local, yang dapat diakses oleh Javascript pada sisi client, dan data yang dimaksud akan disimpan oleh browser sesuai dengan domain dari web yang sedang berjalan.
+2. cookie adalah file teks yang menyimpan data kecil untuk mengidentifikasi komputer saat Anda menggunakan jaringan komputer.
+3. Menggunakan Local Storage dan Session Storage window.localStorage : data yang disimpan tidak memiliki waktu expired window.sessionStorage : data yang disimpan akan hilang jika browes ditutup Pada dasarnya untuk menggunakan localStorage dan sessionStorage sama, terlebih dahulu kita harus mengatur key dan value nya.
