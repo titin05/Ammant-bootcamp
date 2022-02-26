@@ -1,0 +1,130 @@
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop (master)
+$ mkdir mataram
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop (master)
+$ cd matara
+bash: cd: matara: No such file or directory
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop (master)
+$ cd mataram
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git clone https://github.com/titin05/tech4impact-students-bio.git
+Cloning into 'tech4impact-students-bio'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git init .
+Initialized empty Git repository in C:/Users/Computer Shop/Desktop/mataram/.git/
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git add .
+warning: adding embedded git repository: tech4impact-students-bio
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> tech4impact-students-bio
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached tech4impact-students-bio
+hint:
+hint: See "git help submodule" for more information.
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git commit -m "hasil upload"
+[master (root-commit) 1aeaa33] hasil upload
+ 1 file changed, 1 insertion(+)
+ create mode 160000 tech4impact-students-bio
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git branch
+* master
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git branch titin-adrina-febrianti
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git checkout
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git checkout titin-adrina-febrianti
+Switched to branch 'titin-adrina-febrianti'
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (titin-adrina-febrianti)
+$  touch titinadrinafebrianti.md
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (titin-adrina-febrianti)
+$ echo "Nama lengkap : titin adrina febrianti umur : 24 pesan yang ingin disampaikan: Semangat untuk kamu yang disana sedang berjuang" > titinadrinafebrianti.md
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (titin-adrina-febrianti)
+$ cat titinadrinafebrianti.md
+Nama lengkap : titin adrina febrianti umur : 24 pesan yang ingin disampaikan: Semangat untuk kamu yang disana sedang berjuang
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (titin-adrina-febrianti)
+$ git add .
+warning: LF will be replaced by CRLF in titinadrinafebrianti.md.
+The file will have its original line endings in your working directory
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (titin-adrina-febrianti)
+$ git commit -m "titinadrinafebrianti.md"
+[titin-adrina-febrianti d5aa42d] titinadrinafebrianti.md
+ 1 file changed, 1 insertion(+)
+ create mode 100644 titinadrinafebrianti.md
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (titin-adrina-febrianti)
+$ git checkout master
+Switched to branch 'master'
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git branch
+* master
+  titin-adrina-febrianti
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git merge titin-adrina-febrianti
+Updating 1aeaa33..d5aa42d
+Fast-forward
+ titinadrinafebrianti.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 titinadrinafebrianti.md
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git remote add origin https://github.com/titin05/mataram.git
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git branch -M master
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 546 bytes | 273.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/titin05/mataram.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Computer Shop@DESKTOP-9UA1V77 MINGW64 ~/Desktop/mataram (master)
+$
